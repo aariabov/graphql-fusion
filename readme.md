@@ -2,7 +2,12 @@
 Сделано на основе документации https://chillicream.com/docs/fusion/getting-started
 UsersREST подключился только через адаптер, как то стремно, нормальных доков не нашел, сделала ИИ.
 
-Надо запустить все сервисы, Gateway последним.
+Запуск всех сервисов через .NET Aspire (Gateway запускается после зависимостей):
+```
+dotnet run --project ./AppHost
+```
+
+Aspire Dashboard покажет состояние сервисов и адрес Gateway: `http://localhost:5000/graphql`.
 
 Генерация схемы для GraphQl проектов, например для Products
 ```

@@ -20,4 +20,8 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\graphql-fusion.ServiceDefaults\graphql-fusion.ServiceDefaults.csproj" />
+  </ItemGroup>
+
 </Project>

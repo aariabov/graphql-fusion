@@ -10,4 +10,8 @@
     <PackageReference Include="HotChocolate.Fusion.AspNetCore" Version="16.7.5" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\graphql-fusion.ServiceDefaults\graphql-fusion.ServiceDefaults.csproj" />
+  </ItemGroup>
+
 </Project>

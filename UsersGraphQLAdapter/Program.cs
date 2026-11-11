@@ -1,5 +1,7 @@
 var builder = WebApplication.CreateBuilder(args);
 
+builder.AddServiceDefaults();
+
 var usersRestBaseUrl = builder.Configuration["UsersREST:BaseUrl"]
     ?? throw new InvalidOperationException("UsersREST:BaseUrl is not configured.");
 
@@ -11,6 +13,8 @@ builder
     .AddQueryType<UserQueries>(type => type.Name("Query"));
 
 var app = builder.Build();
+
+app.MapDefaultEndpoints();
 
 app.MapGraphQL();
 app.RunWithGraphQLCommands(args);
