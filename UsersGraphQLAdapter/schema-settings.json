@@ -1,0 +1,16 @@
+{
+  "name": "UsersGraphQLAdapter",
+  "transports": {
+    "http": {
+      "url": "http://localhost:5005/graphql",
+      "capabilities": {
+        "batching": {
+          "variableBatching": true,
+          "requestBatching": false,
+          "aliasBatching": true
+        },
+        "onError": "propagate"
+      }
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "name": "UsersREST",
+  "transports": {
+    "http": {
+      "url": "http://localhost:5004",
+      "client": "http"
+    }
+  }
+}

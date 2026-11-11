@@ -1,0 +1,16 @@
+directive @http(
+  path: String!
+  method: String
+) on FIELD_DEFINITION
+
+type Query {
+  users: [User!]! @http(path: "/api/users")
+    @listSize(assumedSize: 3, requireOneSlicingArgument: false)
+  userById(id: Int!): User @http(path: "/api/users/{id}")
+}
+
+type User {
+  id: Int!
+  name: String!
+  email: String!
+}
