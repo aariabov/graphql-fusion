@@ -1,0 +1,16 @@
+{
+  "name": "Shipping",
+  "transports": {
+    "http": {
+      "url": "http://localhost:5003/graphql",
+      "capabilities": {
+        "batching": {
+          "variableBatching": true,
+          "requestBatching": true,
+          "aliasBatching": true
+        },
+        "onError": "propagate"
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "Products",
+  "transports": {
+    "http": {
+      "url": "http://localhost:5001/graphql",
+      "capabilities": {
+        "batching": {
+          "variableBatching": true,
+          "requestBatching": true,
+          "aliasBatching": true
+        },
+        "onError": "propagate"
+      }
+    }
+  }
+}
